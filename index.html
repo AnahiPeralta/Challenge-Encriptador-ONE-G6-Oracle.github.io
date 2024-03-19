@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Encriptador</title>
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="contain">
+        <div class="header">
+            <a href="index.html">
+                <img src="src/img/logo-alura.svg" alt="">
+            </a>
+        </div>
+        <div class="encryptor">
+            <div class="contain-encryptor">
+                <textarea class="encrypt" placeholder="Ingrese el texto aquí" rows="10"></textarea>
+                <div class="encryption-rules">
+                    <img src="src/img/aviso.svg" alt="Imagen Aviso" class="img-aviso">
+                    <p class="txt-warning">Solo letras minúsculas y sin acento</p> 
+                </div>
+                <div class="contain-buttons">
+                    <button type="submit" class="btn-encrypt">Encriptar</button>
+                    <button type="submit" class="btn-decrypt">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-message">
+            <div class="contain-card">
+                <div class="card">
+                    <div class="contain-img">
+                        <img src="src/img/doll-graphic.svg" alt="Imagen Muñeco" class="img-doll">
+                    </div>
+                    <p class="msg-one">Ningún mensaje fue encontrado</p>
+                    <p class="msg-two">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+            </div>
+            <textarea type="message" class="analyze" readonly></textarea>
+            <button type="submit" class="btn-copy">Copiar</button>
+        </div>
+    </main>
+    <script src="src/js/encryptor.js"></script>
+</body>
+</html>

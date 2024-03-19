@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+textarea {
+    appearance: none;
+    background-color: transparent;
+    border: none; 
+    outline: none; 
+    resize: none; 
+    font-family: inherit; 
+    font-size: inherit; 
+    padding: 0; 
+    margin: 0; 
+    overflow: auto; 
+}
+
+body {
+    background-color: #F3F5FC;
+    height: 100vh;
+}
+
+.contain {
+    padding: 25px 4rem;
+    display: grid;
+    grid-template-columns: 10% 60% 30%;
+    height: 100%;
+    gap: 10px;
+}
+
+/*Message encrypt*/
+
+.encryptor, .encryption-rules {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.encryption-rules {
+    margin: 15px 0px;
+} 
+.encryptor textarea {
+    font-size: 23px;
+    font-weight: 500;
+    width: 90%; /*Cambiar a 100% en versiones responsive*/
+    height: 60vh;
+}
+
+.contain-card {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contain-encryptor {
+    width: 100%;
+}
+
+.encryptor textarea::placeholder {
+    color: #0A3871;
+}
+
+.contain-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 90%;
+}
+
+/*Card message*/
+
+.card-message {
+    background-color: white; 
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 4px 6px 8px 0px rgba(0, 0, 0, 0.041);
+}
+
+.contain-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.img-doll {
+    width: 80%;
+}
+
+textarea.analyze {
+    width: 100% !important;
+    height: 70vh;
+    display: none;
+}
+
+p.msg-one, p.msg-two {
+    color: #343A40;
+    text-align: center;
+    font-size: 16px;
+}
+
+p.msg-one {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/*Buttons*/
+
+button {
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    font-size: 14px;
+    font-weight: 600px;
+    background: transparent;
+    width: 100%;
+    padding: 15px 0px;
+    border-radius: 20px;
+}
+
+button.btn-encrypt {
+    background-color: #0A3871;
+    color: white;
+}
+
+.btn-copy {
+    display: none;
+    margin-top: 15px;
+}
+
+@media (max-width: 650px) {
+    .header {
+        margin-bottom: 30px;
+    }
+
+    .contain {
+        grid-template-columns: 1fr;
+        padding: 25px 2rem;
+    }
+
+    body {
+        height: 100%;
+    }
+
+    .encryptor textarea {
+        width: 100%; 
+        height: 40vh;
+    }
+
+    .contain-buttons {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .encryptor {
+        margin-bottom: 20px;
+    } 
+
+    .contain-img {
+        display: none;
+    }
+
+    textarea.analyze {
+        width: 100% !important;
+        height: 30vh;
+    }
+}
